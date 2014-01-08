@@ -48,4 +48,4 @@ var cordovaRef = window.Phonegap || window.Cordova || window.cordova;
         }
     };
 
-module.exports = NotificationEx;
+module.exports = AdMob;
