@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.smithimage.cordova.AdMob"
+        version="0.1.0">
+    
+    <name>AdMob</name>
+    <description>Smithimage, Google AdMob Plugin</description>
+    <license>MIT</license>
+    
+    <engines>
+        <engine name="cordova" version=">=2.9.0" />
+    </engines>
+    <!---->
+    <js-module src="www/AdMobPlugin.js" name="AdMob">
+        <merges target="window.admob"/>
+    </js-module>
+    
+    
+     <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AdMob">
+                <param name="ios-package" value="AdMobController" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/AdMobController.h" />
+        <source-file src="src/ios/AdMobController.m" />
+        
+        <!-- Google AdMob header files -->
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADAdMobExtras.h" />
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADAdNetworkExtras.h" />
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADAdSize.h" />
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADBannerView.h" />
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADBannerViewDelegate.h" />
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADInterstitial.h" />
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADInterstitialDelegate.h" />
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADRequest.h" />
+        <header-file src="src/ios/GoogleAdMobAdsSdkiOS/GADRequestError.h" />
+        
+        <!-- Google AdMob 7  framework -->
+        <source-file src="src/ios/GoogleAdMobAdsSdkiOS/libGoogleAdMobAds.a" framework="true" />
+        
+        <!-- iOS development frameworks need by Google AdMob 6.5.1 framework -->
+        <framework src="StoreKit.framework" />
+        <framework src="AudioToolbox.framework" />
+        <framework src="MessageUI.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="CoreGraphics.framework" />
+        <framework src="AdSupport.framework" />
+    </platform>
+</plugin>
