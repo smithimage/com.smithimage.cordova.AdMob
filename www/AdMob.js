@@ -1,9 +1,6 @@
-var cordovaRef = window.Phonegap || window.Cordova || window.cordova;
 
-    var AdMob = function(){};
-
-    AdMob.prototype = {
-        callbackMap: {},
+var AdMob = {
+       callbackMap: {},
 
         callbackIdx: 0,
 
