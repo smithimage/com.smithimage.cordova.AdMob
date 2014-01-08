@@ -13,7 +13,7 @@
     </engines>
     <!---->
     <js-module src="www/AdMobPlugin.js" name="AdMob">
-        <merges target="window.admob"/>
+        <merges target="plugins.AdMob"/>
     </js-module>
     
     
