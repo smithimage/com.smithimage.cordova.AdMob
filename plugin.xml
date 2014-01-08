@@ -12,7 +12,7 @@
         <engine name="cordova" version=">=2.9.0" />
     </engines>
     <!---->
-    <js-module src="www/AdMobPlugin.js" name="AdMob">
+    <js-module src="www/AdMob.js" name="AdMob">
         <merges target="plugins.AdMob"/>
     </js-module>
     
