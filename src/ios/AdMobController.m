@@ -9,7 +9,6 @@
 #import "AdMobController.h"
 #import "GADBannerView.h"
 #import "GADRequest.h"
-#import "SampleConstants.h"
 
 @implementation AdMobController
 
