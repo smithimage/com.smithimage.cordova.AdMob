@@ -5,19 +5,19 @@ var AdMob = {
         callbackIdx: 0,
 
         createBanner: function(options){
-            cordovaRef.exec(null, null, "AdMob", "createBanner", [options]);
+            cordova.exec(null, null, "AdMob", "createBanner", [options]);
         },
 
         loadBanner: function(options){
-            cordovaRef.exec(null, null, "AdMob", "loadBanner", [options]);
+            cordova.exec(null, null, "AdMob", "loadBanner", [options]);
         },
 
         moveBanner:function(options){
-            cordovaRef.exec(null, null, "AdMob", "moveBanner", [options]);
+            cordova.exec(null, null, "AdMob", "moveBanner", [options]);
         },
 
         deleteBanner: function(){
-            cordovaRef.exec(null, null, "AdMob", "deleteBanner", []);
+            cordova.exec(null, null, "AdMob", "deleteBanner", []);
         },
 
         didFailToReceiveAdWithErrorCallback:function(){
